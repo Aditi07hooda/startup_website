@@ -297,24 +297,114 @@
 /* ... (previous code) ... */
 
 /* Vision and Mission Section Styling */
-.container-xxl h2 {
-  color: #007bff; /* Adjust color as needed */
+
+.bodycard {
+  display: grid;
 }
 
-.container-xxl p.lead {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #444; /* Adjust color as needed */
+.deck {
+  display: flex;
 }
 
-.container-xxl p.lead ul {
-  list-style-type: disc;
-  margin-left: 20px;
+.card-space:hover .card {
+  transform: rotateY(-180deg);
 }
 
-.container-xxl p.lead li {
-  margin-bottom: 8px;
+.card {
+  border-radius: 10px;
+  height: 26rem;
+  width: 20rem;
+  /* margin: 10px; */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
+
+.card .missionVision {
+  margin-top: 5px;
+  color: white;
+}
+
+.card .missionvisionstatement {
+  margin-top: 0;
+  color: white;
+}
+
+.face {
+  border-radius: 10px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+  background-color: #0463fa;
+  padding: 20px;
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+}
+
+.face .missionVision {
+  padding: 0;
+}
+
+.face.front {
+  text-align: center;
+  /* z-index: 20; */
+  width: 100vw;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+}
+
+.face.back {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.containermission {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 90vw;
+  height: min-content;
+}
+
+.rectangle {
+  font-size: 14px;
+  width: 300px;
+  height: auto;
+  color: #ffffff;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* font-family: open sarif, sans-serif; */
+  transform: skewY(-20deg) scaleY(2);
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add animation transition */
+}
+
+.rectangle:hover {
+  transform: skewY(-20deg) scaleY(2) translateY(-5px); /* Adjust translateY for hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust box shadow on hover */
+}
+
+.rectangle:nth-child(1) {
+  background-color: #3539f5;
+}
+
+.rectangle:nth-child(2) {
+  background-color: rgb(3, 152, 233);
+}
+
+.rectangle:nth-child(3) {
+  background-color: rgb(3, 152, 233);
+}
+
+.rectangle:last-child {
+  background-color: #0146f4;
+}
+
 
 /* Additional Styling for Mission Section */
 .container-xxl h2 + p.lead {
@@ -732,41 +822,13 @@
 
 /* vision and mission */
 .bodycard {
-  box-sizing: border-box;
-}
-
-.bodycard,
-.bodycard *:before,
-.bodycard *:after {
-  box-sizing: inherit;
-}
-
-.missionVision {
-  font-family: "Bitter", serif;
-}
-
-.bodycard {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 1fr 50px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  -webkit-perspective: 2000px;
-  perspective: 2000px;
+  /* height: 100vh; */
 }
 
 .deck {
   display: flex;
-}
-
-.card-space {
-  margin-right: 20px; /* Adjusted spacing between cards */
-  margin-left: 100px;
-}
-
-.card-space:last-child {
-  margin-right: 0; /* No margin for the last card */
+  justify-content: center;
 }
 
 .card-space:hover .card {
@@ -775,22 +837,29 @@
 
 .card {
   border-radius: 10px;
-  height: 26rem;
-  width: 20rem;
-  margin: 10px;
+  height: 10rem;
+  width: 90vw;
+  margin: 20px;
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
 }
 
 .card .missionVision {
   margin-top: 5px;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .card .missionvisionstatement {
   margin-top: 0;
   color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .face {
@@ -800,23 +869,33 @@
   padding: 20px;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
 .face .missionVision {
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .face.front {
   text-align: center;
   z-index: 20;
   backface-visibility: hidden;
+  width: 90%;
   transform: rotateY(0deg);
+  display: flex;
+  justify-content: center;
 }
 
 .face.back {
   transform: rotateY(180deg);
+  width: 90%;
   backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 /* achievment board */
@@ -948,9 +1027,9 @@
   #youtubesmallscreen {
     display: flex;
   }
-  #youtubesmallscreen .carousel-inner{
+  #youtubesmallscreen .carousel-inner {
     margin-right: 0;
-    margin-left: -7rem;
+    margin-left: -3.5rem;
     width: 100vw;
     overflow-x: scroll;
   }
@@ -958,22 +1037,29 @@
     display: none;
   }
   /* document */
-  #documentbigscreen{
+  #documentbigscreen {
     display: flex;
     position: relative;
   }
-  .rbd-review-slider .rbd-review{
-    margin-right: 6.2rem;
-    margin-left: 6.2rem;
+  .rbd-core-ui {
+    margin-bottom: 20px; /* Adjust as needed for spacing on smaller screens */
   }
-  .rbd-review-slider .rbd-review.rbd-curr .rbd-content{
-    display: none;
+  .rbd-review {
+    width: 100%; /* Make each review item take up the full width on small screens */
+    margin-bottom: 20px; /* Adjust as needed for spacing between items on smaller screens */
   }
   /* software */
-  #softwaresmallscreen{
+  #softwaresmallscreen {
     display: flex;
   }
-  #softwarebigscreen{
+  #softwarebigscreen {
+    display: none;
+  }
+  /* team */
+  #teamsmallscreen {
+    display: flex;
+  }
+  #teambigscreen {
     display: none;
   }
 }
@@ -1012,9 +1098,9 @@
   #youtubesmallscreen {
     display: flex;
   }
-  #youtubesmallscreen .carousel-inner{
+  #youtubesmallscreen .carousel-inner {
     margin-right: 0;
-    margin-left: -7rem;
+    margin-left: -3.5rem;
     width: 100vw;
     overflow-x: scroll;
   }
@@ -1022,19 +1108,29 @@
     display: none;
   }
   /* document */
-  #documentbigscreen{
+  #documentbigscreen {
     display: flex;
     position: relative;
   }
-  .rbd-review-slider .rbd-review{
-    margin-right: 6.2rem;
-    margin-left: 6.2rem;
+  .rbd-core-ui {
+    margin-bottom: 20px; /* Adjust as needed for spacing on smaller screens */
+  }
+  .rbd-review {
+    width: 100%; /* Make each review item take up the full width on small screens */
+    margin-bottom: 20px; /* Adjust as needed for spacing between items on smaller screens */
   }
   /* software */
-  #softwaresmallscreen{
+  #softwaresmallscreen {
     display: flex;
   }
-  #softwarebigscreen{
+  #softwarebigscreen {
+    display: none;
+  }
+  /* team */
+  #teamsmallscreen {
+    display: flex;
+  }
+  #teambigscreen {
     display: none;
   }
 }
@@ -1066,9 +1162,40 @@
   /* youtube video */
   #youtubesmallscreen {
     display: flex;
-    flex-wrap: wrap;
+  }
+  #youtubesmallscreen .carousel-inner {
+    margin-right: 0;
+    margin-left: -3.5rem;
+    width: 100vw;
+    overflow-x: scroll;
   }
   #youtubebigscreen {
+    display: none;
+  }
+  /* document */
+  #documentbigscreen {
+    display: flex;
+    position: relative;
+  }
+  .rbd-core-ui {
+    margin-bottom: 20px; /* Adjust as needed for spacing on smaller screens */
+  }
+  .rbd-review {
+    width: 100%; /* Make each review item take up the full width on small screens */
+    margin-bottom: 20px; /* Adjust as needed for spacing between items on smaller screens */
+  }
+  /* software */
+  #softwaresmallscreen {
+    display: flex;
+  }
+  #softwarebigscreen {
+    display: none;
+  }
+  /* team */
+  #teamsmallscreen {
+    display: flex;
+  }
+  #teambigscreen {
     display: none;
   }
 }
@@ -1109,32 +1236,44 @@
   /* youtube video */
   #youtubesmallscreen {
     display: flex;
-    justify-content: center;
   }
-  #youtubesmallscreen .carousel-inner{
-    /* display: flex; */
-    justify-content: flex-start;
-  }
-  #youtubesmallscreen > div{
-    width: 88vw;
+  #youtubesmallscreen .carousel-inner {
+    margin-right: 0;
+    margin-left: -3.5rem;
+    width: 100vw;
+    overflow-x: scroll;
   }
   #youtubebigscreen {
     display: none;
   }
-/* document */
-  #documentbigscreen{
+  /* document */
+  #documentbigscreen {
     display: flex;
+    position: relative;
   }
-  .rbd-review-slider .rbd-review{
-    margin-right: 6.2rem;
-    margin-left: 6.2rem;
-    overflow-x: wrap;
+  .rbd-core-ui {
+    margin-bottom: 20px; /* Adjust as needed for spacing on smaller screens */
+  }
+  .rbd-review {
+    width: 100%; /* Make each review item take up the full width on small screens */
+    margin-bottom: 20px; /* Adjust as needed for spacing between items on smaller screens */
   }
   /* software */
-  #softwaresmallscreen{
+  #softwaresmallscreen {
     display: flex;
   }
-  #softwarebigscreen{
+  #softwarebigscreen {
+    display: none;
+  }
+  /* team */
+  #teamsmallscreen {
+    display: flex;
+  }
+  #teamsmallscreen .carousel-inner{
+    display: flex;
+    justify-content: center;
+  }
+  #teambigscreen {
     display: none;
   }
 }
@@ -1172,8 +1311,40 @@
   #youtubesmallscreen {
     display: flex;
   }
+  #youtubesmallscreen .carousel-inner {
+    margin-right: 0;
+    margin-left: -3.5rem;
+    width: 100vw;
+    overflow-x: scroll;
+  }
   #youtubebigscreen {
     display: none;
+  }
+  /* document */
+  #documentbigscreen {
+    display: flex;
+    position: relative;
+  }
+  .rbd-core-ui {
+    margin-bottom: 20px; /* Adjust as needed for spacing on smaller screens */
+  }
+  .rbd-review {
+    width: 100%; /* Make each review item take up the full width on small screens */
+    margin-bottom: 20px; /* Adjust as needed for spacing between items on smaller screens */
+  }
+  /* software */
+  #softwaresmallscreen {
+    display: flex;
+  }
+  #softwarebigscreen {
+    display: none;
+  }
+  /* team */
+  #teamsmallscreen {
+    display: none;
+  }
+  #teambigscreen {
+    display: flex;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -1204,5 +1375,27 @@
   }
   #youtubebigscreen {
     display: block;
+  }
+  /* document */
+  #documentbigscreen {
+    display: flex;
+    position: relative;
+  }
+  .rbd-review {
+    width: 100%; /* Make each review item take up the full width on small screens */
+  }
+  /* software */
+  #softwaresmallscreen {
+    display: none;
+  }
+  #softwarebigscreen {
+    display: flex;
+  }
+  /* team */
+  #teamsmallscreen {
+    display: none;
+  }
+  #teambigscreen {
+    display: flex;
   }
 }
