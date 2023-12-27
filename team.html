@@ -955,6 +955,10 @@
           shortening the way from concept to reality.
         </p>
       </div>
+      <div class="carousel-controls container">
+        <button class="prev-btn carousel-control-prev-icon" onclick="changeSlide(-1)" type="button"></button>
+        <button class="next-btn carousel-control-next-icon" onclick="changeSlide(1)" type="button"></button>
+      </div>    
       <div class="rbd-core-ui" style="margin-bottom: 400px" id="documentbigscreen">
         <div class="rbd-review-slider">
           <div class="rbd-review-container">
@@ -1628,11 +1632,14 @@
     <!-- other logos -->
     <div class="container">
       <div
-        class="mb-5 mt-5 wow fadeInUp"
+        class="text-center mx-auto wow fadeInUp mt-5"
         data-wow-delay="0.1s"
         style="max-width: 600px"
+        id="blogbigscreenheading"
       >
-        <h3>Inspired by</h3>
+        <p class="d-inline-block border rounded-pill py-1 px-4 mt-2">
+          Inspired by
+        </p>
       </div>
       <div class="row align-items-center mt-5">
         <div class="container rounded">
@@ -1694,12 +1701,11 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Company</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Privacy Policy</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">FAQs & Help</a>
+            <h4 class="text-white mb-3">Quick links</h4>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="contact.html">Contact Us</a>
+            <a class="btn btn-link" href="team.html">Resources</a>
+            <a class="btn btn-link" href="service.html">Services</a>
           </div>
           <div class="col-lg-3 col-md-6">
             <h4 class="text-white mb-3">Contact</h4>
@@ -1734,44 +1740,36 @@
               <div class="col-4">
                 <img
                   class="img-fluid bg-light p-1"
-                  src="img/package-1.jpg"
+                  src="img/2_MHRD_logo__1_-removebg-preview.png"
                   alt=""
                 />
               </div>
               <div class="col-4">
                 <img
                   class="img-fluid bg-light p-1"
-                  src="img/package-2.jpg"
+                  src="img/4_Digital India.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid bg-light p-1" src="img/75.png" alt="" />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/Make-in-India-Logo-PNG-HD-768x351.png"
                   alt=""
                 />
               </div>
               <div class="col-4">
                 <img
                   class="img-fluid bg-light p-1"
-                  src="img/package-3.jpg"
+                  src="img/Startup India.png"
                   alt=""
                 />
               </div>
               <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/package-2.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/package-3.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/package-1.jpg"
-                  alt=""
-                />
+                <img class="img-fluid bg-light p-1" src="img/msme.png" alt="" />
               </div>
             </div>
           </div>
@@ -1836,6 +1834,32 @@
         });
       });
     </script>
+    <script>
+      var currentSlide = 0;
+    
+      function showSlide(index) {
+        var slides = document.querySelectorAll('.rbd-review');
+        
+        if (index >= slides.length) {
+          currentSlide = 0;
+        } else if (index < 0) {
+          currentSlide = slides.length - 1;
+        } else {
+          currentSlide = index;
+        }
+    
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].classList.remove('rbd-curr');
+        }
+    
+        slides[currentSlide].classList.add('rbd-curr');
+      }
+    
+      function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+      }
+    </script>
+    
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
