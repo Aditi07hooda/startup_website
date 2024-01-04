@@ -889,6 +889,43 @@
   background-color: #0056b3;
 }
 
+/* Style for contact cards */
+.cardcontact {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cardcontact:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.cardcontact-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+.cardcontact-body {
+  padding: 20px;
+}
+
+.cardcontact-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.cardcontact-text {
+  color: #6c757d;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
 
 @media only screen and (max-width: 500px) {
   /* media query for home page */
