@@ -359,51 +359,66 @@
   transform: rotateY(180deg);
 }
 
-.containermission {
+/* mission */
+.bodycardmission {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  width: 90vw;
-  height: min-content;
-}
-
-.rectangle {
-  font-size: 14px;
-  width: 300px;
-  height: auto;
-  color: #ffffff;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
   justify-content: center;
+}
+
+.deckmission {
+  display: flex;
+}
+
+.cardmission-space:hover .cardmission {
+  transform: rotateY(-180deg);
+}
+
+.cardmission {
   text-align: center;
-  transform: skewY(-20deg) scaleY(2);
-  padding: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add animation transition */
+  border-radius: 10px;
+  height: 15rem;
+  width: 20vw; /* Set a fixed width */
+  margin: 5px 10px; /* Center the card and remove margin on the sides */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 
-.rectangle:hover {
-  transform: skewY(-20deg) scaleY(2) translateY(-5px); /* Adjust translateY for hover effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust box shadow on hover */
+.cardmission .missionVision {
+  margin-top: 5px;
+  color: white;
 }
 
-.rectangle:nth-child(1) {
-  background-color: #3539f5;
+.cardmission .missionvisionstatement {
+  margin-top: 0;
+  color: white;
 }
 
-.rectangle:nth-child(2) {
-  background-color: rgb(3, 152, 233);
+.facemission {
+  border-radius: 10px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+  background-color: #0463fa;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.rectangle:nth-child(3) {
-  background-color: rgb(3, 152, 233);
+.facemission .missionVision {
+  padding: 0;
 }
 
-.rectangle:last-child {
-  background-color: #0146f4;
+.facemission.front {
+  text-align: center;
+  width: 100%;
+  transform: rotateY(0deg);
+}
+
+.facemission.back {
+  transform: rotateY(180deg);
 }
 
 /*** Team ***/
