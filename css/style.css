@@ -941,6 +941,48 @@
   margin-bottom: 0;
 }
 
+/* existing startup */
+.existingStartup {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.existingStartuptitle {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.existingStartupdescription {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.existingStartupyearofRegistration, .existingStartupRegistrationNo, .existingStartupRegistration {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.existingStartupbutton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+
+.existingStartupbutton:hover {
+  background-color: #0056b3;
+}
 
 @media only screen and (max-width: 500px) {
   /* media query for home page */
