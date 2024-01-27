@@ -797,7 +797,7 @@
 
 .fabs {
   width: calc(100% / 10); /* Set to auto to maintain original image width */
-  height: 50px; /* Adjust the height as needed */
+  height: 70px; /* Adjust the height as needed */
   margin: 0 10px; /* Adjust margin as needed for spacing between images */
   animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
@@ -942,12 +942,23 @@
 }
 
 /* existing startup */
-.existingStartup {
+.rbd-review-slider .existingStartup {
+  padding: 20px 30px;
+  font-size: 18px;
+  line-height: 1.612;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.5);
+  vertical-align: top;
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
   margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  max-width: 3000px;
+  height: 30rem;
 }
 
 .existingStartuptitle {
