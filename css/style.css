@@ -1097,6 +1097,21 @@
   #teambigscreen {
     display: none;
   }
+  .bodycardmission{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cardmission-space{
+    width: auto;
+  }
+  .cardmission{
+    width: auto;
+  }
+  .cardvision{
+    width: 100vw;
+    min-height: 35vh;
+  }
 }
 
 @media only screen and (min-width: 325px) and (max-width: 450px) {
@@ -1168,6 +1183,10 @@
   #teambigscreen {
     display: none;
   }
+  .cardvision{
+    width: 100vw;
+    min-height: 35vh;
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   /* event carousel */
@@ -1233,6 +1252,22 @@
   #teambigscreen {
     display: none;
   }
+  .bodycardmission{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cardmission-space{
+    width: auto;
+  }
+  .cardmission{
+    width: auto;
+  }
+  .cardvision{
+    width: 100vw;
+    min-height: 35vh;
+  }
+
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   /* event carousel */
@@ -1311,6 +1346,22 @@
   #teambigscreen {
     display: none;
   }
+  .bodycardmission{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cardmission-space{
+    width: auto;
+  }
+  .cardmission{
+    width: auto;
+  }
+  .cardvision{
+    width: 100vw;
+    min-height: 25vh;
+    font-size: x-large;
+  }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1100px) {
   /* event carousel */
@@ -1381,6 +1432,10 @@
   #teambigscreen {
     display: flex;
   }
+  .missionVision{
+    font-size: large;
+  }
+  
 }
 @media only screen and (min-width: 1100px) {
   /* event carousel */
@@ -1432,5 +1487,8 @@
   }
   #teambigscreen {
     display: flex;
+  }
+  .missionVision{
+    font-size:x-large;
   }
 }
