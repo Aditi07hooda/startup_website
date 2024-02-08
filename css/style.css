@@ -382,11 +382,13 @@
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
+  padding-top: 3rem;
 }
 
 .cardmission .missionVision {
   margin-top: 5px;
   color: white;
+  padding-top: 3rem;
 }
 
 .cardmission .missionvisionstatement {
@@ -942,58 +944,7 @@
 }
 
 /* existing startup */
-.rbd-review-slider .existingStartup {
-  padding: 20px 30px;
-  font-size: 18px;
-  line-height: 1.612;
-  border-radius: 4px;
-  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.5);
-  vertical-align: top;
-  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
-  opacity: 1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  overflow: hidden;
-  background: #fff;
-  max-width: 3000px;
-  height: 30rem;
-}
 
-.existingStartuptitle {
-  color: #333;
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.existingStartupdescription {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.existingStartupyearofRegistration, .existingStartupRegistrationNo, .existingStartupRegistration {
-  color: #444;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.existingStartupbutton {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 0.5rem;
-}
-
-.existingStartupbutton:hover {
-  background-color: #0056b3;
-}
 
 @media only screen and (max-width: 500px) {
   /* media query for home page */
@@ -1434,6 +1385,7 @@
   }
   .missionVision{
     font-size: large;
+    padding-top: 3rem;
   }
   
 }
@@ -1490,5 +1442,6 @@
   }
   .missionVision{
     font-size:x-large;
+    padding-top: 3rem;
   }
 }
