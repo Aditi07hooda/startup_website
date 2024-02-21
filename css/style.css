@@ -798,9 +798,9 @@
 }
 
 .fabs {
-  width: calc(100% / 10); /* Set to auto to maintain original image width */
+  width: calc(100% / 8.5); /* Set to auto to maintain original image width */
   height: 70px; /* Adjust the height as needed */
-  margin: 0 10px; /* Adjust margin as needed for spacing between images */
+  margin: 0 1px; /* Adjust margin as needed for spacing between images */
   animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 

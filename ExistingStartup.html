@@ -142,9 +142,7 @@
           <a href="index.html" class="nav-item nav-link">Home</a>
           <a href="about.html" class="nav-item nav-link">About</a>
           <a href="team.html" class="nav-item nav-link">Resources</a>
-          <a href=".html" class="nav-item nav-link active"
-            >Startup</a
-          >
+          <a href=".html" class="nav-item nav-link active">Startup</a>
           <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
         <a
@@ -192,315 +190,250 @@
           shortening the way from concept to reality.
         </p>
       </div>
-      <div class="carousel-controls container">
-        <button
-          class="prev-btn carousel-control-prev-icon"
-          onclick="changeSlide(-1)"
-          type="button"
-        ></button>
-        <button
-          class="next-btn carousel-control-next-icon"
-          onclick="changeSlide(1)"
-          type="button"
-        ></button>
-      </div>
       <div
-        class="rbd-core-ui"
-        style="height: 620px;"
-        id="documentbigscreen"
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
       >
-        <div class="rbd-review-slider">
-          <div class="rbd-review-container ">
-            <div class="rbd-review review1.1 rbd-curr ">
-              <i class="renderSVG" data-icon="star" data-repeat="5"></i>
-              <div class="rbd-content">
-                <div class="item1 d-flex">
-                  <div class="col-lg-3 col-md-6">
-                    <div
-                      class="team-item position-relative rounded overflow-hidden"
-                    >
-                      <div class="overflow-hidden">
-                        <img
-                          class="img-fluid"
-                          src="https://www.georgetown.edu/wp-content/uploads/2022/02/Jkramerheadshot-scaled-e1645036825432-1050x1050-c-default.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="team-text bg-light text-center p-4">
-                        <h5>Prof Santosh Kathari</h5>
-                        <p class="text-primary">MBA</p>
-                        <div class="team-social text-center">
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-facebook-f"></i
-                          ></a>
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-twitter"></i
-                          ></a>
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-instagram"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+            style="background-color: black"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            style="background-color: black"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            style="background-color: black"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="d-flex">
+              <div class="col-lg-3 col-md-6">
+                <div
+                  class="team-item position-relative rounded overflow-hidden"
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="img-fluid"
+                      src="https://www.georgetown.edu/wp-content/uploads/2022/02/Jkramerheadshot-scaled-e1645036825432-1050x1050-c-default.jpg"
+                      alt=""
+                    />
                   </div>
-                  <div class="mx-4 mt-4">
-                    <h2 class="title">SAMPRADAA</h2>
-                    <p
-                      class="description"
-                      style="text-align: justify"
-                    >
-                      Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                      text used in laying out print, graphic or web designs. The
-                      passage is attributed to an unknown typesetter in the 15th
-                      century who is thought to have scrambled parts of Cicero's
-                      De Finibus Bonorum et Malorum for use in a type specimen
-                      book.Lorem ipsum, or lipsum as it is sometimes known, is
-                      dummy text used in laying out print, graphic or web
-                      designs. The passage is attributed to an unknown
-                      typesetter in the 15th century who is thought to have
-                      scrambled parts of Cicero's De Finibus Bonorum et Malorum
-                      for use in a type specimen book.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <h5 class="yearofRegistration">
-                        <i class="fas fa-calendar"></i>  2022 
-                      </h5>
-                      <h5 class="Registration">
-                        <i class="fas fa-building"></i>  MSME
-                      </h5>
-                      <h5 class="RegistrationNo">
-                        UDYAM-KR-03-0221491
-                      </h5>
+                  <div class="team-text bg-light text-center p-4">
+                    <h5>Staff Name 1</h5>
+                    <p class="text-primary">Department</p>
+                    <div class="team-social text-center">
+                      <a class="btn btn-square" href=""
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a class="btn btn-square" href=""
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a class="btn btn-square" href=""
+                        ><i class="fab fa-instagram"></i
+                      ></a>
                     </div>
-                    <a
-                      href="https://sites.google.com/cmrit.ac.in/sampradaa/home"
-                      target="_blank"
-                      ><button class="btn btn-primary rounded-pill py-3 px-5 mt-3">
-                        Read More
-                      </button></a
-                    >
                   </div>
                 </div>
               </div>
+              <div class="mx-4 mt-4">
+                <h2 class="title">SAMPRADAA</h2>
+                <p class="description" style="text-align: justify">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. The passage
+                  is attributed to an unknown typesetter in the 15th century who
+                  is thought to have scrambled parts of Cicero's De Finibus
+                  Bonorum et Malorum for use in a type specimen book.Lorem
+                  ipsum, or lipsum as it is sometimes known, is dummy text used
+                  in laying out print, graphic or web designs. The passage is
+                  attributed to an unknown typesetter in the 15th century who is
+                  thought to have scrambled parts of Cicero's De Finibus Bonorum
+                  et Malorum for use in a type specimen book. Lorem ipsum, or
+                  lipsum as it is text used in laying out print, g passage is
+                  attributed to an unkn century who is thought to have s De
+                  Finibus Bonorum et Malorum fo book.Lorem ipsum, or lipsum as i
+                  dummy text used in laying out pr designs.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5 class="yearofRegistration">
+                    <i class="fas fa-calendar"></i> 2022
+                  </h5>
+                  <h5 class="Registration">
+                    <i class="fas fa-building"></i> MSME
+                  </h5>
+                  <h5 class="RegistrationNo">UDYAM-KR-03-0221491</h5>
+                </div>
+                <a
+                  href="https://sites.google.com/cmrit.ac.in/sampradaa/home"
+                  target="_blank"
+                  ><button class="btn btn-primary rounded-pill py-3 px-5 mt-3">
+                    Read More
+                  </button></a
+                >
+              </div>
             </div>
-            <div class="rbd-review review1.2 rbd-next ">
-              <i class="renderSVG" data-icon="star" data-repeat="5"></i>
-              <div class="rbd-content">
-                <div class="item1 d-flex">
-                  <div class="col-lg-3 col-md-6">
-                    <div
-                      class="team-item position-relative rounded overflow-hidden"
-                    >
-                      <div class="overflow-hidden">
-                        <img
-                          class="img-fluid"
-                          src="https://www.georgetown.edu/wp-content/uploads/2022/02/Jkramerheadshot-scaled-e1645036825432-1050x1050-c-default.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="team-text bg-light text-center p-4">
-                        <h5>Prof Santosh Kathari</h5>
-                        <p class="text-primary">MBA</p>
-                        <div class="team-social text-center">
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-facebook-f"></i
-                          ></a>
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-twitter"></i
-                          ></a>
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-instagram"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="d-flex">
+              <div class="col-lg-3 col-md-6">
+                <div
+                  class="team-item position-relative rounded overflow-hidden"
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="img-fluid"
+                      src="https://www.georgetown.edu/wp-content/uploads/2022/02/Jkramerheadshot-scaled-e1645036825432-1050x1050-c-default.jpg"
+                      alt=""
+                    />
                   </div>
-                  <div class="mx-4 mt-4">
-                    <h2 class="title">SAMPRADAA</h2>
-                    <p
-                      class="description"
-                      style="text-align: justify"
-                    >
-                      Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                      text used in laying out print, graphic or web designs. The
-                      passage is attributed to an unknown typesetter in the 15th
-                      century who is thought to have scrambled parts of Cicero's
-                      De Finibus Bonorum et Malorum for use in a type specimen
-                      book.Lorem ipsum, or lipsum as it is sometimes known, is
-                      dummy text used in laying out print, graphic or web
-                      designs. The passage is attributed to an unknown
-                      typesetter in the 15th century who is thought to have
-                      scrambled parts of Cicero's De Finibus Bonorum et Malorum
-                      for use in a type specimen book.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <h5 class="yearofRegistration">
-                        <i class="fas fa-calendar"></i>  2022 
-                      </h5>
-                      <h5 class="Registration">
-                        <i class="fas fa-building"></i>  MSME
-                      </h5>
-                      <h5 class="RegistrationNo">
-                        UDYAM-KR-03-0221491
-                      </h5>
+                  <div class="team-text bg-light text-center p-4">
+                    <h5>Staff Name 1</h5>
+                    <p class="text-primary">Department</p>
+                    <div class="team-social text-center">
+                      <a class="btn btn-square" href=""
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a class="btn btn-square" href=""
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a class="btn btn-square" href=""
+                        ><i class="fab fa-instagram"></i
+                      ></a>
                     </div>
-                    <a
-                      href="https://sites.google.com/cmrit.ac.in/sampradaa/home"
-                      target="_blank"
-                      ><button class="btn btn-primary rounded-pill py-3 px-5 mt-3">
-                        Read More
-                      </button></a
-                    >
                   </div>
                 </div>
               </div>
+              <div class="mx-4 mt-4">
+                <h2 class="title">SAMPRADAA</h2>
+                <p class="description" style="text-align: justify">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. The passage
+                  is attributed to an unknown typesetter in the 15th century who
+                  is thought to have scrambled parts of Cicero's De Finibus
+                  Bonorum et Malorum for use in a type specimen book.Lorem
+                  ipsum, or lipsum as it is sometimes known, is dummy text used
+                  in laying out print, graphic or web designs. The passage is
+                  attributed to an unknown typesetter in the 15th century who is
+                  thought to have scrambled parts of Cicero's De Finibus Bonorum
+                  et Malorum for use in a type specimen book.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5 class="yearofRegistration">
+                    <i class="fas fa-calendar"></i> 2022
+                  </h5>
+                  <h5 class="Registration">
+                    <i class="fas fa-building"></i> MSME
+                  </h5>
+                  <h5 class="RegistrationNo">UDYAM-KR-03-0221491</h5>
+                </div>
+                <a
+                  href="https://sites.google.com/cmrit.ac.in/sampradaa/home"
+                  target="_blank"
+                  ><button class="btn btn-primary rounded-pill py-3 px-5 mt-3">
+                    Read More
+                  </button></a
+                >
+              </div>
             </div>
-            <div class="rbd-review review1.3 rbd-next ">
-              <i class="renderSVG" data-icon="star" data-repeat="5"></i>
-              <div class="rbd-content">
-                <div class="item1 d-flex">
-                  <div class="col-lg-3 col-md-6">
-                    <div
-                      class="team-item position-relative rounded overflow-hidden"
-                    >
-                      <div class="overflow-hidden">
-                        <img
-                          class="img-fluid"
-                          src="https://www.georgetown.edu/wp-content/uploads/2022/02/Jkramerheadshot-scaled-e1645036825432-1050x1050-c-default.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="team-text bg-light text-center p-4">
-                        <h5>Prof Santosh Kathari</h5>
-                        <p class="text-primary">MBA</p>
-                        <div class="team-social text-center">
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-facebook-f"></i
-                          ></a>
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-twitter"></i
-                          ></a>
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-instagram"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex">
+              <div class="col-lg-3 col-md-6">
+                <div
+                  class="team-item position-relative rounded overflow-hidden"
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="img-fluid"
+                      src="https://www.georgetown.edu/wp-content/uploads/2022/02/Jkramerheadshot-scaled-e1645036825432-1050x1050-c-default.jpg"
+                      alt=""
+                    />
                   </div>
-                  <div class="mx-4 mt-4">
-                    <h2 class="title">SAMPRADAA</h2>
-                    <p
-                      class="description"
-                      style="text-align: justify"
-                    >
-                      Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                      text used in laying out print, graphic or web designs. The
-                      passage is attributed to an unknown typesetter in the 15th
-                      century who is thought to have scrambled parts of Cicero's
-                      De Finibus Bonorum et Malorum for use in a type specimen
-                      book.Lorem ipsum, or lipsum as it is sometimes known, is
-                      dummy text used in laying out print, graphic or web
-                      designs. The passage is attributed to an unknown
-                      typesetter in the 15th century who is thought to have
-                      scrambled parts of Cicero's De Finibus Bonorum et Malorum
-                      for use in a type specimen book.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <h5 class="yearofRegistration">
-                        <i class="fas fa-calendar"></i>  2022 
-                      </h5>
-                      <h5 class="Registration">
-                        <i class="fas fa-building"></i>  MSME
-                      </h5>
-                      <h5 class="RegistrationNo">
-                        UDYAM-KR-03-0221491
-                      </h5>
+                  <div class="team-text bg-light text-center p-4">
+                    <h5>Staff Name 1</h5>
+                    <p class="text-primary">Department</p>
+                    <div class="team-social text-center">
+                      <a class="btn btn-square" href=""
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a class="btn btn-square" href=""
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a class="btn btn-square" href=""
+                        ><i class="fab fa-instagram"></i
+                      ></a>
                     </div>
-                    <a
-                      href="https://sites.google.com/cmrit.ac.in/sampradaa/home"
-                      target="_blank"
-                      ><button class="btn btn-primary rounded-pill py-3 px-5 mt-3">
-                        Read More
-                      </button></a
-                    >
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="rbd-review review1.4 rbd-next ">
-              <i class="renderSVG" data-icon="star" data-repeat="5"></i>
-              <div class="rbd-content">
-                <div class="item1 d-flex">
-                  <div class="col-lg-3 col-md-6">
-                    <div
-                      class="team-item position-relative rounded overflow-hidden"
-                    >
-                      <div class="overflow-hidden">
-                        <img
-                          class="img-fluid"
-                          src="https://www.georgetown.edu/wp-content/uploads/2022/02/Jkramerheadshot-scaled-e1645036825432-1050x1050-c-default.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="team-text bg-light text-center p-4">
-                        <h5>Prof Santosh Kathari</h5>
-                        <p class="text-primary">MBA</p>
-                        <div class="team-social text-center">
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-facebook-f"></i
-                          ></a>
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-twitter"></i
-                          ></a>
-                          <a class="btn btn-square" href=""
-                            ><i class="fab fa-instagram"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mx-4 mt-4">
-                    <h2 class="title">SAMPRADAA</h2>
-                    <p
-                      class="description"
-                      style="text-align: justify"
-                    >
-                      Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                      text used in laying out print, graphic or web designs. The
-                      passage is attributed to an unknown typesetter in the 15th
-                      century who is thought to have scrambled parts of Cicero's
-                      De Finibus Bonorum et Malorum for use in a type specimen
-                      book.Lorem ipsum, or lipsum as it is sometimes known, is
-                      dummy text used in laying out print, graphic or web
-                      designs. The passage is attributed to an unknown
-                      typesetter in the 15th century who is thought to have
-                      scrambled parts of Cicero's De Finibus Bonorum et Malorum
-                      for use in a type specimen book.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <h5 class="yearofRegistration">
-                        <i class="fas fa-calendar"></i>  2022 
-                      </h5>
-                      <h5 class="Registration">
-                        <i class="fas fa-building"></i>  MSME
-                      </h5>
-                      <h5 class="RegistrationNo">
-                        UDYAM-KR-03-0221491
-                      </h5>
-                    </div>
-                    <a
-                      href="https://sites.google.com/cmrit.ac.in/sampradaa/home"
-                      target="_blank"
-                      ><button class="btn btn-primary rounded-pill py-3 px-5 mt-3">
-                        Read More
-                      </button></a
-                    >
-                  </div>
+              <div class="mx-4 mt-4">
+                <h2 class="title">SAMPRADAA</h2>
+                <p class="description" style="text-align: justify">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. The passage
+                  is attributed to an unknown typesetter in the 15th century who
+                  is thought to have scrambled parts of Cicero's De Finibus
+                  Bonorum et Malorum for use in a type specimen book.Lorem
+                  ipsum, or lipsum as it is sometimes known, is dummy text used
+                  in laying out print, graphic or web designs. The passage is
+                  attributed to an unknown typesetter in the 15th century who is
+                  thought to have scrambled parts of Cicero's De Finibus Bonorum
+                  et Malorum for use in a type specimen book.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5 class="yearofRegistration">
+                    <i class="fas fa-calendar"></i> 2022
+                  </h5>
+                  <h5 class="Registration">
+                    <i class="fas fa-building"></i> MSME
+                  </h5>
+                  <h5 class="RegistrationNo">UDYAM-KR-03-0221491</h5>
                 </div>
+                <a
+                  href="https://sites.google.com/cmrit.ac.in/sampradaa/home"
+                  target="_blank"
+                  ><button class="btn btn-primary rounded-pill py-3 px-5 mt-3">
+                    Read More
+                  </button></a
+                >
               </div>
             </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
     <!-- end Existing startup -->
