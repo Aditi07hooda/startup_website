@@ -798,9 +798,9 @@
 }
 
 .fabs {
-  width: calc(100% / 8.5); /* Set to auto to maintain original image width */
+  width: calc(100% / 10); /* Set to auto to maintain original image width */
   height: 70px; /* Adjust the height as needed */
-  margin: 0 1px; /* Adjust margin as needed for spacing between images */
+  margin: 0 3px; /* Adjust margin as needed for spacing between images */
   animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
@@ -943,6 +943,66 @@
   margin-bottom: 0;
 }
 
+/* existing startup */
+
+.sliderstartup {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  /* Adjusted width */
+}
+
+.sliderstartup::before,
+.sliderstartup::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 50px;
+  z-index: 2;
+}
+
+.sliderstartup::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.sliderstartup::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track-startup {
+  display: flex;
+  width: max-content;
+  /* Adjusted width to accommodate duplicated slides */
+  animation: scroll 20s linear infinite;
+  /* Adjusted animation timing */
+}
+
+.slidestartup {
+  height: 100px;
+  width: 170px;
+  margin-right: 10px;
+  /* Adjusted margin */
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(calc(-170px * 6 - 5px));
+      /* Adjusted calculation */
+  }
+}
+
 @media only screen and (max-width: 500px) {
   /* media query for home page */
   /* event carousel */
@@ -1001,7 +1061,7 @@
     display: none;
   }
   #blogbigscreenheading {
-    display: none;
+    display: block;
   }
 
   /* media query for resource page */
@@ -1060,6 +1120,27 @@
     width: 100vw;
     min-height: 35vh;
   }
+
+  #existingFaculty{
+    flex-flow: column;
+  }
+
+  #existingFacultyRightDiv{
+    height: 400px;
+  }
+
+  #existingFacultyDescription{
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #existingFacultyIcons{
+    flex-flow: column;
+  }
+  #existingStartupImageBig{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 325px) and (max-width: 450px) {
@@ -1088,7 +1169,7 @@
     display: none;
   }
   #blogbigscreenheading {
-    display: none;
+    display: block;
   }
 
   /* media query for resource page */
@@ -1134,6 +1215,27 @@
   .cardvision{
     width: 100vw;
     min-height: 35vh;
+  }
+
+  #existingFaculty{
+    flex-flow: column;
+  }
+
+  #existingFacultyRightDiv{
+    height: 400px;
+  }
+
+  #existingFacultyDescription{
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #existingFacultyIcons{
+    flex-flow: column;
+  }
+  #existingStartupImageBig{
+    display: none;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -1214,6 +1316,27 @@
   .cardvision{
     width: 100vw;
     min-height: 35vh;
+  }
+
+  #existingFaculty{
+    flex-flow: column;
+  }
+
+  #existingFacultyRightDiv{
+    height: 400px;
+  }
+
+  #existingFacultyDescription{
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #existingFacultyIcons{
+    flex-flow: column;
+  }
+  #existingStartupImageBig{
+    display: none;
   }
 
 }
@@ -1310,6 +1433,31 @@
     min-height: 25vh;
     font-size: x-large;
   }
+
+  #existingFaculty{
+    flex-flow: column;
+  }
+
+  #existingFacultyRightDiv{
+    height: 400px;
+  }
+
+  #existingFacultyDescription{
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #existingFacultyIcons{
+    flex-flow: column;
+  }
+  #existingStartupImageBig{
+    display: block;
+    place-self: center;
+  }
+  #existingStartupImageSmall{
+    display: none;
+  }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1100px) {
   /* event carousel */
@@ -1384,6 +1532,26 @@
     font-size: large;
     padding-top: 3rem;
   }
+
+  #existingFacultyRightDiv{
+    height: 400px;
+  }
+
+  #existingFacultyDescription{
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #existingFacultyIcons{
+    flex-flow: column;
+  }
+  #existingStartupImageBig{
+    display: block;
+  }
+  #existingStartupImageSmall{
+    display: none;
+  }
   
 }
 @media only screen and (min-width: 1100px) {
@@ -1440,5 +1608,11 @@
   .missionVision{
     font-size:x-large;
     padding-top: 3rem;
+  }
+  #existingStartupImageBig{
+    display: block;
+  }
+  #existingStartupImageSmall{
+    display: none;
   }
 }
