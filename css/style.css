@@ -1128,15 +1128,23 @@
   #existingFacultyRightDiv{
     height: 400px;
   }
-
+  
+  #existingFacultyRightDiv > h2 {
+    font-size: 1.3rem;
+  }
+  
   #existingFacultyDescription{
     height: 100px;
+    font-size: smaller;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   #existingFacultyIcons{
     flex-flow: column;
+  }
+  #existingFacultyIcons h5{
+    font-size: 1rem;
   }
   #existingStartupImageBig{
     display: none;
